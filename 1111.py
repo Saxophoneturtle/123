@@ -70,9 +70,8 @@ digit_map = map(int, digit_string)
 
 
 digit_list = list(digit_map)
-
-    if '{:032b}'.format(x)=='1000000000000000000000000000000000'or len('{:032b}'.format(x))>33:
-        return 0
-    else:
-        return x
+if '{:032b}'.format(x)=='1000000000000000000000000000000000'or len('{:032b}'.format(x))>33:
+    return 0
+else:
+    return x
 print(digit_list)
